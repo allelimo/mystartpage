@@ -44,7 +44,6 @@ var settings = {
 			["http://www.google.com/search", "q", "google", "sg"],
 			["https://it.wikipedia.org/w/index.php", "search", "wikipedia italia"],
 			["https://en.wikipedia.org/w/index.php", "search", "wikipedia", "sw"],
-			["http://forum.framework7.io/", "q", "fw7 forum"],
 			["http://stackoverflow.com/search", "q", "stackoverflow"],
 			["http://code.visualstudio.com/Search", "q", "vs studio docs"],
 			["http://sentireascoltare.com/", "s", "sentireascoltare"],
