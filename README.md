@@ -28,6 +28,8 @@ This only has one setting: ```"newWindow"```. Set to true to have links open in 
 
 #### clock
 Again, this has one setting: ```"showClock"```. True or false.
+### added - allelimo
+new setting: ```"use12hours"```. true or false, 12 hours or 24 hours format 
 
 #### animation
 This only has one setting: ```"hideLinks"```. Set to true to have links being shown/hidden automatically on
@@ -41,6 +43,8 @@ This is where it gets interesting. There's two keys:
 
 ##### focusSearch
 ```true``` or ```false```. This is supposed to focus the first search box when the page is opened, but that's highly dependent on the browser. It works in Firefox, but last time I checked it won't work in Chrome. There's not really anything I can do about that.
+### added - allelimo
+new setting: ```"newWindow"```. true or false, open searches in same/new window. 
 
 ##### engines
 This is the fun part. Instead of giving you predefined search engines, I thought I'd let you add some on the fly.

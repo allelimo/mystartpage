@@ -82,6 +82,7 @@ function updateClock() {
 	currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
 	currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
 
+	// allelimo - use 12/24 hours format
 	if (settings.clock.use12hours) {
 	// Choose either "AM" or "PM" as appropriate
   var timeOfDay = (currentHours < 12) ? "AM" : "PM";
@@ -103,7 +104,7 @@ function updateClock() {
 }
 
 function searchBox(url, name, placeholder) {
-	// open search in new window
+	// allelimo - open search in new window
 	var endString = null;
 	if (settings.search.newWindow){
 		endString = '" target="_blank">';
