@@ -59,7 +59,8 @@ var settings = {
 	
 	"clock": {
 		"showClock": true,
-		"use12hours": false
+		"use12hours": false,
+		"clockcenter": true
 	},
 	
 	"animation": {
@@ -101,8 +102,13 @@ function updateClock() {
 		// Compose the string for display
 		currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " ";
 	}
-	// Fill '#clock' div with time
-	$("#clock").html(currentTimeString);
+
+	if(settings.clock.clockcenter){
+		// Fill '#clock' div with time
+		$("#clockcenter").html(currentTimeString);
+	} else {
+		$("#clockright").html(currentTimeString);
+	}
 }
 
 function searchBox(url, name, placeholder) {
@@ -255,13 +261,16 @@ $(document).ready(function() {
 	\*=========*/
 
 	if(settings.clock.showClock) {
-		// Add empty '#clock' div
-		$('body').append('<div id="clock"></div>');
-
+		if(settings.clock.clockcenter){
+			// Add empty '#clockcenter' div
+			$('body').append('<div id="clockcenter"></div>');
+		} else {
+			// Add empty '#clockright' div
+			$('body').append('<div id="clockright"></div>');
+		}
 		// Update clock
 		setInterval('updateClock()', 1000);
 	}
-
 
 	/*  Keybindings  *\
 	\*===============*/

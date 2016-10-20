@@ -82,10 +82,17 @@ li img {
 	right: 2em;															/*		from right edge */
 }
 
-#clock {
+#clockcenter {
 	position: absolute;
 	bottom: 10px;		
 	left: 45%;		
+	font-size: 2em;	
+}
+
+#clockright {
+	position: absolute;
+	bottom: 10px;		
+	right: 10px;		
 	font-size: 2em;	
 }
 
