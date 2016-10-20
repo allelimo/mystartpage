@@ -91,7 +91,7 @@ function updateClock() {
 	currentHours = (currentHours > 12) ? currentHours - 12 : currentHours;
 
 	// Convert an hours component of "0" to "12"
-	currentHours = (currentHours == 0) ? 12 : currentHours;
+	currentHours = (currentHours === 0) ? 12 : currentHours;
 
 	// Compose the string for display
 	currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
@@ -111,10 +111,10 @@ function searchBox(url, name, placeholder) {
 	} else {
 		endString = '">';
 	}
-	var string = '<form method="get" action="' + url + endString		/*'" target="_blank">'							/* + '">'  */
-	           + '<input type="text" id="g" name="' + name + '" placeholder="' + placeholder + '" maxlength="255" value="">'
-	           + '<input type="submit" value="">'  /*value: go o cerca*/
-	           + '</form>';
+	var string = '<form method="get" action="' + url + endString +
+	             '<input type="text" id="g" name="' + name + '" placeholder="' + placeholder + '" maxlength="255" value="">' +
+	             '<input type="submit" value="">' +  /*value: go o cerca*/
+	             '</form>';
 	return string;
 }
 
@@ -152,7 +152,7 @@ $(document).ready(function() {
 		/*  If it doesn't contain "://",  *\
 		|*  it's not a URL                *|
 		\*================================*/
-		if(/:\/\//.test(line) != true) {
+		if(/:\/\//.test(line) !== true) {
 			if(count > 1) {
 				html = html + '</div>';
 			}
@@ -188,10 +188,10 @@ $(document).ready(function() {
 		/*  Add HTML code  *\
 		\*=================*/
 		if(settings.navigation.newWindow) {
-			html = html + '<li>' + iconHtml + '<a href="' + url + '" target="_blank">' + title + '</a></li>'
+			html = html + '<li>' + iconHtml + '<a href="' + url + '" target="_blank">' + title + '</a></li>';
 		}
 		else {
-			html = html + '<li>' + iconHtml + '<a href="' + url + '">' + title + '</a></li>'
+			html = html + '<li>' + iconHtml + '<a href="' + url + '">' + title + '</a></li>';
 		}
 	}
 

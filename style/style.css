@@ -31,25 +31,25 @@
 */
 
 body {
-	background: #1e1e1e;										/* Page background */ /*151515*/
-	color: #999;														/* Font color */
+	background: #1e1e1e;									/* Page background */ 
+	color: #999;													/* Font color */
 	padding: 150px;													/* Padding between link blocks and edge */
 	font-family: "Museo", "Helvetica Neue", sans-serif;	/* Font */
 	text-shadow: rgba(0,0,0,0.6) 1px 1px 0; /* Text Shadow */
 }
 
 a {
-	color: #999;														/* Link Color */
+	color: #999;													/* Link Color */
 	font-size: 11px;												/* Link Size */
 	text-decoration: none;									/* Remove underlines */
 }
 
 a:hover {
-	color: #d4d4d4;														/* Link hover color */
+	color: #d4d4d4;												/* Link hover color */
 }
 
 .block {
-	border-left: 1px solid #999;						/* Left border of link block */
+	border-left: 1px solid #999;					/* Left border of link block */
 	float: left;
 	padding: 1em;														/* Padding around link block */
 	width: 160px;														/* Link block width */
@@ -78,15 +78,15 @@ li img {
 
 #searches {
 	position: absolute;											/* Position search box */
-	top: center;	/*2em*/															/*		from top edge */
+	top: center;	/*2em*/										/*		from top edge */
 	right: 2em;															/*		from right edge */
 }
 
 #clock {
 	position: absolute;
-	bottom: 10px;
-	right: 10px;  /*10px*/
-	font-size: 2em;
+	bottom: 10px;		
+	right: 10px;			 
+	font-size: 2em;	
 }
 
 form {
@@ -94,21 +94,8 @@ form {
 }
 
 form input {
-	background: #1e1e1e;												/* Background search box */
-/*	background: -webkit-gradient(						/*		gradient for webkit */
-/*		linear,
-		left top,
-		left bottom,
-		from(#222),
-		to(#333));
-	background: -moz-linear-gradient(				/*		gradient for gecko */
-/*		top,
-		#222,
-		#333);*/ 
+	background: #1e1e1e;									/* Background search box */
 	border: 1px solid #1e1e1e;									/* Border search box */
-	/*-webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;	/* Shadow search box - webkit */
-	/*-moz-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;			/* Shadow search box - gecko */
-	/*box-shadow: rgba(0,0,0,0.2) 0 1px 2px;					/* Shadow search box - generic */
 	color: #999;														/* Text color search box */
 	font-size: 1em;				}
 
