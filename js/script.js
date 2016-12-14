@@ -58,7 +58,7 @@ var settings = {
 	},
 	
 	"clock": {
-		"showClock": true,
+		"showClock": false,
 		"use12hours": false,
 		"clockcenter": true
 	},
